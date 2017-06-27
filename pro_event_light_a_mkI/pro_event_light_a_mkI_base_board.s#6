@@ -5412,7 +5412,7 @@ Source: http://www.infineon.com/dgdl/ILD4001-Step-down-LED-Controller-Rev2.0.pdf
 </class>
 </classes>
 <modules>
-<module name="LED" prefix="" dx="30.48" dy="20.32">
+<module name="PMIC_IL4001" prefix="" dx="30.48" dy="20.32">
 <ports>
 <port name="DRIVER_LED" side="left" coord="7.62" direction="io"/>
 <port name="ENABLE_LED" side="left" coord="-2.54" direction="io"/>
@@ -5747,7 +5747,7 @@ fast switching diode 1N4148 or 1N914</text>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="FRAME3" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="MCU1" library="mod_eagle_library_MCU_CPU" deviceset="STM32L452RET6" device=""/>
-<part name="U$7" library="mod_eagle_library_switches" deviceset="ALPS_EC11D" device=""/>
+<part name="SW1" library="mod_eagle_library_switches" deviceset="ALPS_EC11D" device=""/>
 <part name="K1" library="Board_to_Board_Connectors_rev15d" deviceset="62201021121" device=""/>
 <part name="R35" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
 <part name="R36" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
@@ -5785,6 +5785,12 @@ fast switching diode 1N4148 or 1N914</text>
 <part name="LEDR6" library="mod_eagle_library_discrete_elements" deviceset="LRG5AP" device=""/>
 <part name="LEDW1" library="mod_eagle_library_discrete_elements" deviceset="LCWG5GP" device=""/>
 <part name="LEDW2" library="mod_eagle_library_discrete_elements" deviceset="LCWG5GP" device=""/>
+<part name="C2" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" deviceset="WCAP-CSGP" device="_0603-WAVE"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="C3" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" deviceset="WCAP-CSGP" device="_0603-WAVE"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="C4" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" deviceset="WCAP-CSGP" device="_0603-WAVE"/>
 </parts>
 <sheets>
 <sheet>
@@ -5796,9 +5802,9 @@ fast switching diode 1N4148 or 1N914</text>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="U$7" gate="G$1" x="132.08" y="88.9"/>
-<instance part="U$7" gate="G$2" x="152.4" y="91.44"/>
-<instance part="U$7" gate="G$3" x="157.48" y="83.82"/>
+<instance part="SW1" gate="G$1" x="127" y="91.44"/>
+<instance part="SW1" gate="G$2" x="154.94" y="88.9"/>
+<instance part="SW1" gate="G$3" x="182.88" y="96.52" rot="R90"/>
 <instance part="U$10" gate="G$1" x="50.8" y="25.4"/>
 <instance part="U$11" gate="G$1" x="22.86" y="25.4"/>
 <instance part="U$15" gate="G$1" x="88.9" y="25.4"/>
@@ -5808,6 +5814,12 @@ fast switching diode 1N4148 or 1N914</text>
 <instance part="U$8" gate="G$1" x="124.46" y="25.4"/>
 <instance part="C1" gate="G$1" x="137.16" y="22.86"/>
 <instance part="D2" gate="G$1" x="86.36" y="248.92"/>
+<instance part="C2" gate="G$1" x="114.3" y="88.9"/>
+<instance part="R11" gate="G$1" x="124.46" y="111.76" rot="R90"/>
+<instance part="R12" gate="G$1" x="129.54" y="111.76" rot="R90"/>
+<instance part="C3" gate="G$1" x="139.7" y="88.9"/>
+<instance part="R13" gate="G$1" x="182.88" y="111.76" rot="R90"/>
+<instance part="C4" gate="G$1" x="193.04" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -5878,6 +5890,82 @@ fast switching diode 1N4148 or 1N914</text>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="83.82" y1="248.92" x2="73.66" y2="248.92" width="0.1524" layer="91"/>
 <label x="73.66" y="248.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="SW1" gate="G$1" pin="A"/>
+<wire x1="124.46" y1="106.68" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="101.6" x2="124.46" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="101.6" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="101.6" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
+<junction x="124.46" y="101.6"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="101.6" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="B"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="106.68" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="101.6" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
+<junction x="129.54" y="101.6"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="SW1" gate="G$1" pin="C"/>
+<wire x1="127" y1="88.9" x2="127" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="127" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$2" pin="G"/>
+<wire x1="139.7" y1="78.74" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="78.74" x2="154.94" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="88.9" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="81.28" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
+<junction x="154.94" y="78.74"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="86.36" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="78.74" x2="127" y2="78.74" width="0.1524" layer="91"/>
+<junction x="127" y="78.74"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="86.36" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<junction x="139.7" y="78.74"/>
+<pinref part="SW1" gate="G$3" pin="D"/>
+<wire x1="154.94" y1="78.74" x2="182.88" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="78.74" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="78.74" x2="193.04" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="78.74" x2="193.04" y2="88.9" width="0.1524" layer="91"/>
+<junction x="182.88" y="78.74"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="116.84" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="121.92" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="121.92" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="116.84" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="121.92" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
+<junction x="129.54" y="121.92"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="96.52" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$3" pin="E"/>
+<wire x1="193.04" y1="104.14" x2="182.88" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="104.14" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="104.14" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
+<junction x="182.88" y="104.14"/>
 </segment>
 </net>
 </nets>
@@ -6148,7 +6236,7 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 <wire x1="274.32" y1="127" x2="274.32" y2="248.92" width="0.1524" layer="151"/>
 </plain>
 <moduleinsts>
-<moduleinst name="P2-1" module="LED" x="81.28" y="78.74"/>
+<moduleinst name="P2-1" module="PMIC_IL4001" x="81.28" y="78.74"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>

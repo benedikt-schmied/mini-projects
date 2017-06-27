@@ -5785,15 +5785,15 @@ fast switching diode 1N4148 or 1N914</text>
 <part name="LEDR6" library="mod_eagle_library_discrete_elements" deviceset="LRG5AP" device=""/>
 <part name="LEDW1" library="mod_eagle_library_discrete_elements" deviceset="LCWG5GP" device=""/>
 <part name="LEDW2" library="mod_eagle_library_discrete_elements" deviceset="LCWG5GP" device=""/>
-<part name="C2" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" deviceset="WCAP-CSGP" device="_0603-WAVE"/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="C3" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" deviceset="WCAP-CSGP" device="_0603-WAVE"/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="C4" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" deviceset="WCAP-CSGP" device="_0603-WAVE"/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R15" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R16" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="C2" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" deviceset="WCAP-CSGP" device="_0603-WAVE" value="4.7pF"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0603" value="22K"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="22K"/>
+<part name="C3" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" deviceset="WCAP-CSGP" device="_0603-WAVE" value="4.7pF"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0603" value="22K"/>
+<part name="C4" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" deviceset="WCAP-CSGP" device="_0603-WAVE" value="4.7pF"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
+<part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
 </parts>
 <sheets>
 <sheet>
@@ -5884,7 +5884,7 @@ fast switching diode 1N4148 or 1N914</text>
 <wire x1="124.46" y1="15.24" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SUPPLY_24V" class="0">
+<net name="SUPPLY_24V" class="4">
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="88.9" y1="248.92" x2="101.6" y2="248.92" width="0.1524" layer="91"/>
@@ -6289,7 +6289,7 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 <busses>
 </busses>
 <nets>
-<net name="SUPPLY_24V" class="0">
+<net name="SUPPLY_24V" class="4">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="226.06" x2="111.76" y2="243.84" width="0.1524" layer="91"/>

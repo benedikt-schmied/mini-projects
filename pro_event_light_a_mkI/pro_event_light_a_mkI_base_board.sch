@@ -5884,7 +5884,7 @@ fast switching diode 1N4148 or 1N914</text>
 <wire x1="124.46" y1="15.24" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SUPPLY_24V" class="0">
+<net name="SUPPLY_24V" class="4">
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="88.9" y1="248.92" x2="101.6" y2="248.92" width="0.1524" layer="91"/>
@@ -6289,7 +6289,7 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 <busses>
 </busses>
 <nets>
-<net name="SUPPLY_24V" class="0">
+<net name="SUPPLY_24V" class="4">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="226.06" x2="111.76" y2="243.84" width="0.1524" layer="91"/>
