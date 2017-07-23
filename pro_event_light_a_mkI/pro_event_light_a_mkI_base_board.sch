@@ -3633,8 +3633,8 @@ Source: http://www.osram.convergy.de/ ... ls_t675.pdf</description>
 <rectangle x1="-3.1" y1="-1.1" x2="-1.9" y2="-0.3" layer="31"/>
 <rectangle x1="1.9" y1="-1.1" x2="3.1" y2="-0.3" layer="29"/>
 <rectangle x1="1.9" y1="-1.1" x2="3.1" y2="-0.3" layer="31"/>
-<text x="-4.826" y="3.302" size="1.524" layer="25">&gt;NAME</text>
-<text x="-4.826" y="-2.794" size="1.524" layer="27">&gt;VALUE</text>
+<text x="-4.826" y="3.302" size="0.5842" layer="25">&gt;NAME</text>
+<text x="-4.826" y="-2.032" size="0.5842" layer="27">&gt;VALUE</text>
 </package>
 <package name="DFN1010D-3">
 <smd name="2" x="-0.375" y="0.7" dx="0.35" dy="0.4" layer="1"/>
@@ -3894,8 +3894,8 @@ LED
 <wire x1="1.524" y1="1.524" x2="-1.524" y2="1.524" width="0.127" layer="21"/>
 <rectangle x1="-1.651" y1="1.651" x2="1.651" y2="2.667" layer="40"/>
 <rectangle x1="-1.651" y1="-2.667" x2="1.651" y2="-1.651" layer="40"/>
-<text x="-1.778" y="-4.064" size="1.524" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.175" y="-4.191" size="1.524" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-1.778" y="-4.064" size="0.5842" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.175" y="-4.191" size="0.5842" layer="27" rot="R90">&gt;VALUE</text>
 <smd name="9" x="0" y="0" dx="2.54" dy="1.27" layer="1" rot="R180"/>
 <rectangle x1="-1.778" y1="-1.524" x2="1.778" y2="1.524" layer="39"/>
 </package>

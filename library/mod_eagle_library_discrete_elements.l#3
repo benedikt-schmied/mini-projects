@@ -332,26 +332,9 @@ LED
 </device>
 </devices>
 </deviceset>
-<deviceset name="BAT60J" prefix="D">
-<description>&lt;b&gt;Schottky barrier diode&lt;/b&gt;&lt;p&gt;
-Source: www.st.com, BAT60J.pdf</description>
-<gates>
-<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOD323">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="1N4148WS" prefix="D">
-<description>&lt;h1&gt;1N4148WS&lt;/h1&gt;</description>
+<description>&lt;h1&gt;1N4148WS&lt;/h1&gt;
+&lt;a href="https://www.vishay.com/diodes/list/product-85413"/&gt;</description>
 <gates>
 <gate name="G$1" symbol="SMALL_SIGNAL_DIODE" x="0" y="0"/>
 </gates>

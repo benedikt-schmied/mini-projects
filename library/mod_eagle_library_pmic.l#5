@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -93,23 +93,24 @@
 <package name="SC74">
 <description>&lt;h1&gt;SC74&lt;/h1&gt;
 &lt;p&gt;recommended pcb footpring for reflow soldering&lt;/p&gt;</description>
-<smd name="1" x="-1.2" y="0.95" dx="0.5" dy="0.55" layer="1"/>
-<smd name="2" x="-1.2" y="0" dx="0.5" dy="0.55" layer="1"/>
-<smd name="3" x="-1.2" y="-0.95" dx="0.5" dy="0.55" layer="1"/>
-<smd name="4" x="1.2" y="-0.95" dx="0.5" dy="0.55" layer="1" rot="R180"/>
-<smd name="5" x="1.2" y="0" dx="0.5" dy="0.55" layer="1" rot="R180"/>
-<smd name="6" x="1.2" y="0.95" dx="0.5" dy="0.55" layer="1" rot="R180"/>
-<dimension x1="-1.524" y1="1.27" x2="-0.889" y2="1.27" x3="-1.2065" y3="1.905" textsize="0.254" layer="47" width="0.0254"/>
-<dimension x1="-1.524" y1="1.27" x2="-1.524" y2="0.635" x3="-3.048" y3="0.9525" textsize="0.254" layer="47" width="0.0254"/>
-<dimension x1="-0.889" y1="1.016" x2="1.016" y2="1.016" x3="0.0635" y3="-1.905" textsize="0.254" layer="47" width="0.0254"/>
-<dimension x1="1.27" y1="0" x2="1.27" y2="-1.016" x3="2.921" y3="-0.508" textsize="0.254" layer="47" width="0.0254"/>
-<text x="-1.651" y="-3.175" size="1.4224" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.048" y="-3.556" size="1.4224" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="-1.27" x2="1.524" y2="1.27" layer="39"/>
-<wire x1="-0.762" y1="1.524" x2="-0.762" y2="-1.524" width="0.127" layer="51"/>
-<wire x1="-0.762" y1="-1.524" x2="0.762" y2="-1.524" width="0.127" layer="51"/>
-<wire x1="0.762" y1="-1.524" x2="0.762" y2="1.524" width="0.127" layer="51"/>
-<wire x1="0.762" y1="1.524" x2="-0.762" y2="1.524" width="0.127" layer="51"/>
+<smd name="1" x="-0.95" y="-1.2" dx="0.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-1.2" dx="0.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="3" x="0.95" y="-1.2" dx="0.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="4" x="0.95" y="1.2" dx="0.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="5" x="0" y="1.2" dx="0.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="6" x="-0.95" y="1.2" dx="0.5" dy="0.55" layer="1" rot="R270"/>
+<dimension x1="-1.27" y1="-1.524" x2="-1.27" y2="-0.889" x3="-1.905" y3="-1.2065" textsize="0.254" layer="47" width="0.0254"/>
+<dimension x1="-1.27" y1="-1.524" x2="-0.635" y2="-1.524" x3="-0.9525" y3="-3.048" textsize="0.254" layer="47" width="0.0254"/>
+<dimension x1="-1.016" y1="-0.889" x2="-1.016" y2="1.016" x3="1.905" y3="0.0635" textsize="0.254" layer="47" width="0.0254"/>
+<dimension x1="0" y1="1.27" x2="1.016" y2="1.27" x3="0.508" y3="2.921" textsize="0.254" layer="47" width="0.0254"/>
+<text x="3.175" y="-1.651" size="1.4224" layer="25" rot="R180">&gt;NAME</text>
+<text x="3.556" y="3.048" size="1.4224" layer="27" rot="R180">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-1.27" x2="1.524" y2="1.27" layer="39" rot="R90"/>
+<wire x1="-1.524" y1="-0.762" x2="1.524" y2="-0.762" width="0.127" layer="51"/>
+<wire x1="1.524" y1="-0.762" x2="1.524" y2="0.762" width="0.127" layer="51"/>
+<wire x1="1.524" y1="0.762" x2="-1.524" y2="0.762" width="0.127" layer="51"/>
+<wire x1="-1.524" y1="0.762" x2="-1.524" y2="-0.762" width="0.127" layer="51"/>
+<circle x="-1.016" y="-0.381" radius="0.127" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -130,6 +131,20 @@
 <pin name="VIN" x="-25.4" y="10.16" length="short"/>
 <text x="-22.86" y="20.32" size="1.778" layer="95">&gt;NAME</text>
 <text x="-22.86" y="17.78" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ILD4001">
+<pin name="P$1" x="-17.78" y="10.16" length="short"/>
+<pin name="P$2" x="-17.78" y="0" length="short"/>
+<pin name="P$3" x="-17.78" y="-10.16" length="short"/>
+<pin name="P$4" x="15.24" y="-10.16" length="short" rot="R180"/>
+<pin name="P$5" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="P$6" x="15.24" y="10.16" length="short" rot="R180"/>
+<wire x1="-15.24" y1="12.7" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="-15.24" y2="12.7" width="0.254" layer="94"/>
+<text x="-7.62" y="12.7" size="1.4224" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.4224" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
