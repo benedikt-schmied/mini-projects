@@ -5777,8 +5777,8 @@ fast switching diode 1N4148 or 1N914</text>
 <part name="LEDB2" library="mod_eagle_library_discrete_elements" deviceset="LDG5AP" device=""/>
 <part name="LEDB3" library="mod_eagle_library_discrete_elements" deviceset="LDG5AP" device=""/>
 <part name="LEDB4" library="mod_eagle_library_discrete_elements" deviceset="LDG5AP" device=""/>
-<part name="LEDG2" library="mod_eagle_library_discrete_elements" deviceset="LTG5AP" device=""/>
 <part name="LEDG1" library="mod_eagle_library_discrete_elements" deviceset="LTG5AP" device=""/>
+<part name="LEDG2" library="mod_eagle_library_discrete_elements" deviceset="LTG5AP" device=""/>
 <part name="LEDR1" library="mod_eagle_library_discrete_elements" deviceset="LRG5AP" device=""/>
 <part name="LEDR2" library="mod_eagle_library_discrete_elements" deviceset="LRG5AP" device=""/>
 <part name="LEDR3" library="mod_eagle_library_discrete_elements" deviceset="LRG5AP" device=""/>
@@ -6336,8 +6336,8 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 <instance part="LEDB2" gate="G$1" x="149.86" y="170.18"/>
 <instance part="LEDB3" gate="G$1" x="172.72" y="193.04"/>
 <instance part="LEDB4" gate="G$1" x="172.72" y="170.18"/>
-<instance part="LEDG2" gate="G$1" x="111.76" y="190.5"/>
-<instance part="LEDG1" gate="G$1" x="111.76" y="165.1"/>
+<instance part="LEDG1" gate="G$1" x="111.76" y="190.5"/>
+<instance part="LEDG2" gate="G$1" x="111.76" y="165.1"/>
 <instance part="LEDR1" gate="G$1" x="226.06" y="187.96"/>
 <instance part="LEDR2" gate="G$1" x="226.06" y="165.1"/>
 <instance part="LEDR3" gate="G$1" x="241.3" y="187.96"/>
@@ -6417,8 +6417,8 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="LEDG2" gate="G$1" pin="P$2"/>
-<pinref part="LEDG1" gate="G$1" pin="P$1"/>
+<pinref part="LEDG1" gate="G$1" pin="P$2"/>
+<pinref part="LEDG2" gate="G$1" pin="P$1"/>
 <wire x1="111.76" y1="182.88" x2="111.76" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6556,7 +6556,7 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 </net>
 <net name="DRIVER_LEDG" class="0">
 <segment>
-<pinref part="LEDG1" gate="G$1" pin="P$2"/>
+<pinref part="LEDG2" gate="G$1" pin="P$2"/>
 <label x="111.76" y="132.08" size="1.778" layer="95" rot="R90"/>
 <wire x1="111.76" y1="157.48" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
 <portref moduleinst="PMIC2" port="PMIC_IL4001_KATHODE"/>
@@ -6565,7 +6565,7 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 </net>
 <net name="VSENSE_LEDG" class="0">
 <segment>
-<pinref part="LEDG2" gate="G$1" pin="P$1"/>
+<pinref part="LEDG1" gate="G$1" pin="P$1"/>
 <wire x1="111.76" y1="215.9" x2="111.76" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="210.82" x2="111.76" y2="198.12" width="0.1524" layer="91"/>

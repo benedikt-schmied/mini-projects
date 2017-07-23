@@ -6598,8 +6598,9 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 <label x="241.3" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="187.96" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
 <label x="165.1" y="81.28" size="1.778" layer="95"/>
+<portref moduleinst="PMIC4" port="PMIC_IL4001_GND"/>
 </segment>
 </net>
 <net name="LEDG" class="0">

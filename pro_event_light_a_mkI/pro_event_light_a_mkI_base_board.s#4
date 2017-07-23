@@ -6613,6 +6613,9 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 <segment>
 <wire x1="60.96" y1="17.78" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="55.88" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
+<portref moduleinst="PMIC3" port="PMIC_IL4001_EN_LED"/>
+<wire x1="91.44" y1="55.88" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LEDR" class="0">
