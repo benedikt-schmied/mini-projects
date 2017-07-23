@@ -2136,6 +2136,24 @@ design rules under a new name.</description>
 <element name="PMIC2:PMIC1" library="infineon" package="SC74_INFINEON" value="ILD4001" x="-68.072" y="-140.462"/>
 <element name="PMIC2:R14" library="rcl" package="R0603" value="" x="-68.326" y="-146.304"/>
 <element name="PMIC2:U1" library="mod_eagle_library_discrete_elements" package="DFN1010D-3" value="PMXB56EN" x="-73.152" y="-142.748"/>
+<element name="PMIC3:C8" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" package="WCAP-CSGP_0603_WAVE" value="" x="-77.47" y="-146.05"/>
+<element name="PMIC3:DZ1" library="mod_eagle_library_discrete_elements" package="SOD123" value="MBR0540T1" x="-74.93" y="-150.876"/>
+<element name="PMIC3:L2" library="EagleLibrary_Wuerth_Elektronik_eiSos_rev16a" package="WE-LQ_M" value="68uH" x="-84.836" y="-148.844"/>
+<element name="PMIC3:PMIC1" library="infineon" package="SC74_INFINEON" value="ILD4001" x="-85.344" y="-157.226"/>
+<element name="PMIC3:R14" library="rcl" package="R0603" value="" x="-85.598" y="-163.068"/>
+<element name="PMIC3:U1" library="mod_eagle_library_discrete_elements" package="DFN1010D-3" value="PMXB56EN" x="-90.424" y="-159.512"/>
+<element name="PMIC4:C8" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" package="WCAP-CSGP_0603_WAVE" value="" x="-94.742" y="-162.814"/>
+<element name="PMIC4:DZ1" library="mod_eagle_library_discrete_elements" package="SOD123" value="MBR0540T1" x="-92.202" y="-167.64"/>
+<element name="PMIC4:L2" library="EagleLibrary_Wuerth_Elektronik_eiSos_rev16a" package="WE-LQ_M" value="68uH" x="-102.108" y="-165.608"/>
+<element name="PMIC4:PMIC1" library="infineon" package="SC74_INFINEON" value="ILD4001" x="-102.616" y="-173.99"/>
+<element name="PMIC4:R14" library="rcl" package="R0603" value="" x="-102.87" y="-179.832"/>
+<element name="PMIC4:U1" library="mod_eagle_library_discrete_elements" package="DFN1010D-3" value="PMXB56EN" x="-107.696" y="-176.276"/>
+<element name="PMIC5:C8" library="Eagle_Wurth_Elektronik_Passive_Capacitors_rev15a" package="WCAP-CSGP_0603_WAVE" value="" x="-112.014" y="-179.578"/>
+<element name="PMIC5:DZ1" library="mod_eagle_library_discrete_elements" package="SOD123" value="MBR0540T1" x="-109.474" y="-184.404"/>
+<element name="PMIC5:L2" library="EagleLibrary_Wuerth_Elektronik_eiSos_rev16a" package="WE-LQ_M" value="68uH" x="-119.38" y="-182.372"/>
+<element name="PMIC5:PMIC1" library="infineon" package="SC74_INFINEON" value="ILD4001" x="-119.888" y="-190.754"/>
+<element name="PMIC5:R14" library="rcl" package="R0603" value="" x="-120.142" y="-196.596"/>
+<element name="PMIC5:U1" library="mod_eagle_library_discrete_elements" package="DFN1010D-3" value="PMXB56EN" x="-124.968" y="-193.04"/>
 </elements>
 <signals>
 <signal name="VTREF" class="5">
@@ -2198,7 +2216,32 @@ design rules under a new name.</description>
 <contactref element="PMIC1:C10" pad="1"/>
 <contactref element="PMIC1:C3" pad="1"/>
 <contactref element="PMIC1:C7" pad="2"/>
-<wire x1="-54.356" y1="-125.476" x2="-53.381" y2="-127.6465" width="0" layer="19" extent="1-1"/>
+<contactref element="PMIC2:U1" pad="2"/>
+<contactref element="PMIC2:R14" pad="1"/>
+<contactref element="PMIC2:PMIC1" pad="5"/>
+<contactref element="PMIC2:PMIC1" pad="2"/>
+<contactref element="PMIC2:C8" pad="1"/>
+<contactref element="PMIC3:U1" pad="2"/>
+<contactref element="PMIC3:R14" pad="1"/>
+<contactref element="PMIC3:PMIC1" pad="5"/>
+<contactref element="PMIC3:PMIC1" pad="2"/>
+<contactref element="PMIC3:C8" pad="1"/>
+<contactref element="PMIC5:U1" pad="2"/>
+<contactref element="PMIC5:R14" pad="1"/>
+<contactref element="PMIC5:PMIC1" pad="5"/>
+<contactref element="PMIC5:PMIC1" pad="2"/>
+<contactref element="PMIC5:C8" pad="1"/>
+<wire x1="-85.344" y1="-158.426" x2="-86.448" y2="-163.068" width="0" layer="19" extent="1-1"/>
+<wire x1="-85.344" y1="-156.026" x2="-85.344" y2="-158.426" width="0" layer="19" extent="1-1"/>
+<wire x1="-90.799" y1="-158.812" x2="-85.344" y2="-158.426" width="0" layer="19" extent="1-1"/>
+<wire x1="-78.32" y1="-146.05" x2="-85.344" y2="-156.026" width="0" layer="19" extent="1-1"/>
+<wire x1="-73.527" y1="-142.048" x2="-78.32" y2="-146.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-68.072" y1="-141.662" x2="-73.527" y2="-142.048" width="0" layer="19" extent="1-1"/>
+<wire x1="-68.072" y1="-139.262" x2="-68.072" y2="-141.662" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.176" y1="-146.304" x2="-68.072" y2="-141.662" width="0" layer="19" extent="1-1"/>
+<wire x1="-61.048" y1="-129.032" x2="-68.072" y2="-139.262" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.356" y1="-125.476" x2="-61.048" y2="-129.032" width="0" layer="19" extent="1-1"/>
+<wire x1="-53.381" y1="-127.6465" x2="-54.356" y2="-125.476" width="0" layer="19" extent="1-1"/>
 <wire x1="-49.11" y1="-119.126" x2="-54.356" y2="-125.476" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.692" y1="-108.712" x2="-49.11" y2="-119.126" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.98" y1="-103.886" x2="-35.692" y2="-108.712" width="0" layer="19" extent="1-1"/>
@@ -2206,6 +2249,11 @@ design rules under a new name.</description>
 <wire x1="-32.678" y1="-103.886" x2="-35.98" y2="-103.886" width="0" layer="19" extent="1-1"/>
 <wire x1="-23.854" y1="-103.124" x2="-32.678" y2="-103.886" width="0" layer="19" extent="1-1"/>
 <wire x1="-20.552" y1="-97.536" x2="-23.854" y2="-103.124" width="0" layer="19" extent="1-1"/>
+<wire x1="-112.864" y1="-179.578" x2="-90.799" y2="-158.812" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.888" y1="-189.554" x2="-112.864" y2="-179.578" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.888" y1="-191.954" x2="-119.888" y2="-189.554" width="0" layer="19" extent="1-1"/>
+<wire x1="-120.992" y1="-196.596" x2="-119.888" y2="-191.954" width="0" layer="19" extent="1-1"/>
+<wire x1="-125.343" y1="-192.34" x2="-119.888" y2="-191.954" width="0" layer="19" extent="1-1"/>
 <wire x1="17.07" y1="2.124" x2="-20.552" y2="-97.536" width="0" layer="19" extent="1-1"/>
 <wire x1="10.414" y1="6.184" x2="17.07" y2="2.124" width="0" layer="19" extent="1-16"/>
 <wire x1="10.326" y1="8.128" x2="10.414" y2="6.184" width="0" layer="19" extent="16-16"/>
@@ -2299,9 +2347,27 @@ design rules under a new name.</description>
 <contactref element="PMIC1:C6" pad="1"/>
 <contactref element="PMIC1:C10" pad="2"/>
 <contactref element="PMIC1:R13" pad="2"/>
+<contactref element="PMIC2:C8" pad="2"/>
+<contactref element="PMIC2:PMIC1" pad="1"/>
+<contactref element="PMIC2:DZ1" pad="C"/>
+<contactref element="PMIC5:C8" pad="2"/>
+<contactref element="PMIC5:PMIC1" pad="1"/>
+<contactref element="PMIC5:DZ1" pad="C"/>
+<contactref element="PMIC4:C8" pad="2"/>
+<contactref element="PMIC4:PMIC1" pad="1"/>
+<contactref element="PMIC4:DZ1" pad="C"/>
+<wire x1="-59.558" y1="-134.112" x2="-69.022" y2="-141.662" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.348" y1="-129.032" x2="-59.558" y2="-134.112" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.681" y1="-127.6465" x2="-59.348" y2="-129.032" width="0" layer="19" extent="1-1"/>
 <wire x1="-47.41" y1="-128.778" x2="-54.681" y2="-127.6465" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.68" y1="-103.886" x2="-47.41" y2="-128.778" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.152" y1="-97.536" x2="-37.68" y2="-103.886" width="0" layer="19" extent="1-1"/>
+<wire x1="-93.892" y1="-162.814" x2="-69.022" y2="-141.662" width="0" layer="19" extent="1-1"/>
+<wire x1="-94.102" y1="-167.64" x2="-93.892" y2="-162.814" width="0" layer="19" extent="1-1"/>
+<wire x1="-103.566" y1="-175.19" x2="-94.102" y2="-167.64" width="0" layer="19" extent="1-1"/>
+<wire x1="-111.164" y1="-179.578" x2="-103.566" y2="-175.19" width="0" layer="19" extent="1-1"/>
+<wire x1="-111.374" y1="-184.404" x2="-111.164" y2="-179.578" width="0" layer="19" extent="1-1"/>
+<wire x1="-120.838" y1="-191.954" x2="-111.374" y2="-184.404" width="0" layer="19" extent="1-1"/>
 <wire x1="21.17" y1="-93.218" x2="-24.152" y2="-97.536" width="0" layer="19" extent="1-1"/>
 <wire x1="24.98" y1="-93.218" x2="21.17" y2="-93.218" width="0" layer="19" extent="1-1"/>
 <wire x1="28.79" y1="-93.218" x2="24.98" y2="-93.218" width="0" layer="19" extent="1-1"/>
@@ -2437,12 +2503,16 @@ design rules under a new name.</description>
 <signal name="DRIVER_LEDG">
 <contactref element="LEDG1" pad="4"/>
 <contactref element="LEDG1" pad="3"/>
-<wire x1="17.224" y1="16.318" x2="23.924" y2="16.318" width="0" layer="19" extent="1-1"/>
+<contactref element="PMIC2:L2" pad="1"/>
+<wire x1="17.224" y1="16.318" x2="-68.764" y2="-132.08" width="0" layer="19" extent="1-1"/>
+<wire x1="23.924" y1="16.318" x2="17.224" y2="16.318" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VSENSE_LEDG">
 <contactref element="LEDG2" pad="2"/>
 <contactref element="LEDG2" pad="1"/>
 <contactref element="R6" pad="1"/>
+<contactref element="PMIC2:PMIC1" pad="6"/>
+<wire x1="30.9" y1="-93.218" x2="-69.022" y2="-139.262" width="0" layer="19" extent="1-1"/>
 <wire x1="23.924" y1="24.714" x2="30.9" y2="-93.218" width="0" layer="19" extent="1-1"/>
 <wire x1="17.224" y1="24.714" x2="23.924" y2="24.714" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2553,32 +2623,95 @@ design rules under a new name.</description>
 <wire x1="-67.122" y1="-139.262" x2="-72.777" y2="-142.048" width="0" layer="19" extent="1-1"/>
 <wire x1="-67.476" y1="-146.304" x2="-72.777" y2="-142.048" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="PMIC2:PMIC_IL4001_GND" class="8">
-<contactref element="PMIC2:U1" pad="2"/>
-<contactref element="PMIC2:R14" pad="1"/>
-<contactref element="PMIC2:PMIC1" pad="5"/>
-<contactref element="PMIC2:PMIC1" pad="2"/>
-<contactref element="PMIC2:C8" pad="1"/>
-<wire x1="-68.072" y1="-141.662" x2="-69.176" y2="-146.304" width="0" layer="19" extent="1-1"/>
-<wire x1="-68.072" y1="-139.262" x2="-68.072" y2="-141.662" width="0" layer="19" extent="1-1"/>
-<wire x1="-73.527" y1="-142.048" x2="-68.072" y2="-141.662" width="0" layer="19" extent="1-1"/>
-<wire x1="-61.048" y1="-129.032" x2="-68.072" y2="-139.262" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="PMIC2:PMIC_IL4001_EN_LED">
 <contactref element="PMIC2:PMIC1" pad="3"/>
 </signal>
-<signal name="PMIC2:PMIC_IL4001_VSENSE">
-<contactref element="PMIC2:PMIC1" pad="6"/>
+<signal name="PMIC3:N$29">
+<contactref element="PMIC3:L2" pad="2"/>
+<contactref element="PMIC3:U1" pad="3"/>
+<contactref element="PMIC3:DZ1" pad="A"/>
+<wire x1="-83.636" y1="-148.844" x2="-90.424" y2="-160.212" width="0" layer="19" extent="1-1"/>
+<wire x1="-73.03" y1="-150.876" x2="-83.636" y2="-148.844" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="PMIC2:PMIC_IL4001_KATHODE">
-<contactref element="PMIC2:L2" pad="1"/>
+<signal name="PMIC3:N$2">
+<contactref element="PMIC3:U1" pad="1"/>
+<contactref element="PMIC3:PMIC1" pad="4"/>
+<contactref element="PMIC3:R14" pad="2"/>
+<wire x1="-84.394" y1="-156.026" x2="-90.049" y2="-158.812" width="0" layer="19" extent="1-1"/>
+<wire x1="-84.748" y1="-163.068" x2="-90.049" y2="-158.812" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="PMIC2:PMIC_IL4001_S24V">
-<contactref element="PMIC2:C8" pad="2"/>
-<contactref element="PMIC2:PMIC1" pad="1"/>
-<contactref element="PMIC2:DZ1" pad="C"/>
-<wire x1="-59.558" y1="-134.112" x2="-69.022" y2="-141.662" width="0" layer="19" extent="1-1"/>
-<wire x1="-59.348" y1="-129.032" x2="-59.558" y2="-134.112" width="0" layer="19" extent="1-1"/>
+<signal name="PMIC3:PMIC_IL4001_EN_LED">
+<contactref element="PMIC3:PMIC1" pad="3"/>
+</signal>
+<signal name="PMIC3:PMIC_IL4001_VSENSE">
+<contactref element="PMIC3:PMIC1" pad="6"/>
+</signal>
+<signal name="PMIC3:PMIC_IL4001_KATHODE">
+<contactref element="PMIC3:L2" pad="1"/>
+</signal>
+<signal name="PMIC3:PMIC_IL4001_S24V">
+<contactref element="PMIC3:C8" pad="2"/>
+<contactref element="PMIC3:PMIC1" pad="1"/>
+<contactref element="PMIC3:DZ1" pad="C"/>
+<wire x1="-76.83" y1="-150.876" x2="-86.294" y2="-158.426" width="0" layer="19" extent="1-1"/>
+<wire x1="-76.62" y1="-146.05" x2="-76.83" y2="-150.876" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PMIC4:N$29">
+<contactref element="PMIC4:L2" pad="2"/>
+<contactref element="PMIC4:U1" pad="3"/>
+<contactref element="PMIC4:DZ1" pad="A"/>
+<wire x1="-100.908" y1="-165.608" x2="-107.696" y2="-176.976" width="0" layer="19" extent="1-1"/>
+<wire x1="-90.302" y1="-167.64" x2="-100.908" y2="-165.608" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PMIC4:N$2">
+<contactref element="PMIC4:U1" pad="1"/>
+<contactref element="PMIC4:PMIC1" pad="4"/>
+<contactref element="PMIC4:R14" pad="2"/>
+<wire x1="-101.666" y1="-172.79" x2="-107.321" y2="-175.576" width="0" layer="19" extent="1-1"/>
+<wire x1="-102.02" y1="-179.832" x2="-107.321" y2="-175.576" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PMIC4:PMIC_IL4001_GND" class="8">
+<contactref element="PMIC4:U1" pad="2"/>
+<contactref element="PMIC4:R14" pad="1"/>
+<contactref element="PMIC4:PMIC1" pad="5"/>
+<contactref element="PMIC4:PMIC1" pad="2"/>
+<contactref element="PMIC4:C8" pad="1"/>
+<wire x1="-102.616" y1="-175.19" x2="-108.071" y2="-175.576" width="0" layer="19" extent="1-1"/>
+<wire x1="-102.616" y1="-172.79" x2="-102.616" y2="-175.19" width="0" layer="19" extent="1-1"/>
+<wire x1="-103.72" y1="-179.832" x2="-102.616" y2="-175.19" width="0" layer="19" extent="1-1"/>
+<wire x1="-95.592" y1="-162.814" x2="-102.616" y2="-172.79" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PMIC4:PMIC_IL4001_EN_LED">
+<contactref element="PMIC4:PMIC1" pad="3"/>
+</signal>
+<signal name="PMIC4:PMIC_IL4001_VSENSE">
+<contactref element="PMIC4:PMIC1" pad="6"/>
+</signal>
+<signal name="PMIC4:PMIC_IL4001_KATHODE">
+<contactref element="PMIC4:L2" pad="1"/>
+</signal>
+<signal name="PMIC5:N$29">
+<contactref element="PMIC5:L2" pad="2"/>
+<contactref element="PMIC5:U1" pad="3"/>
+<contactref element="PMIC5:DZ1" pad="A"/>
+<wire x1="-118.18" y1="-182.372" x2="-124.968" y2="-193.74" width="0" layer="19" extent="1-1"/>
+<wire x1="-107.574" y1="-184.404" x2="-118.18" y2="-182.372" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PMIC5:N$2">
+<contactref element="PMIC5:U1" pad="1"/>
+<contactref element="PMIC5:PMIC1" pad="4"/>
+<contactref element="PMIC5:R14" pad="2"/>
+<wire x1="-118.938" y1="-189.554" x2="-124.593" y2="-192.34" width="0" layer="19" extent="1-1"/>
+<wire x1="-119.292" y1="-196.596" x2="-124.593" y2="-192.34" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PMIC5:PMIC_IL4001_EN_LED">
+<contactref element="PMIC5:PMIC1" pad="3"/>
+</signal>
+<signal name="PMIC5:PMIC_IL4001_VSENSE">
+<contactref element="PMIC5:PMIC1" pad="6"/>
+</signal>
+<signal name="PMIC5:PMIC_IL4001_KATHODE">
+<contactref element="PMIC5:L2" pad="1"/>
 </signal>
 </signals>
 </board>

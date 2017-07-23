@@ -2382,6 +2382,8 @@ design rules under a new name.</description>
 <contactref element="LEDB4" pad="3"/>
 <contactref element="LEDB2" pad="4"/>
 <contactref element="LEDB2" pad="3"/>
+<contactref element="PMIC3:L2" pad="1"/>
+<wire x1="-20.114" y1="-54.04" x2="-86.036" y2="-148.844" width="0" layer="19" extent="1-1"/>
 <wire x1="-13.414" y1="-54.04" x2="-20.114" y2="-54.04" width="0" layer="19" extent="1-1"/>
 <wire x1="3.508" y1="-38.546" x2="-13.414" y2="-54.04" width="0" layer="19" extent="1-1"/>
 <wire x1="10.208" y1="-38.546" x2="3.508" y2="-38.546" width="0" layer="19" extent="1-1"/>
@@ -2410,6 +2412,8 @@ design rules under a new name.</description>
 <contactref element="LEDB1" pad="1"/>
 <contactref element="LEDB3" pad="2"/>
 <contactref element="LEDB3" pad="1"/>
+<contactref element="PMIC3:PMIC1" pad="6"/>
+<wire x1="19.47" y1="-93.218" x2="-86.294" y2="-156.026" width="0" layer="19" extent="1-1"/>
 <wire x1="27.13" y1="-36.246" x2="19.47" y2="-93.218" width="0" layer="19" extent="1-1"/>
 <wire x1="33.83" y1="-36.246" x2="27.13" y2="-36.246" width="0" layer="19" extent="1-1"/>
 <wire x1="-13.414" y1="-36.246" x2="27.13" y2="-36.246" width="0" layer="19" extent="1-1"/>
@@ -2441,12 +2445,14 @@ design rules under a new name.</description>
 <contactref element="LEDR3" pad="1"/>
 <contactref element="LEDR5" pad="2"/>
 <contactref element="LEDR5" pad="1"/>
+<contactref element="PMIC4:PMIC1" pad="6"/>
 <wire x1="-13.414" y1="-67.234" x2="-20.114" y2="-67.234" width="0" layer="19" extent="1-1"/>
 <wire x1="3.508" y1="-82.728" x2="-13.414" y2="-67.234" width="0" layer="19" extent="1-1"/>
 <wire x1="10.208" y1="-82.728" x2="3.508" y2="-82.728" width="0" layer="19" extent="1-1"/>
 <wire x1="23.28" y1="-93.218" x2="10.208" y2="-82.728" width="0" layer="19" extent="1-1"/>
 <wire x1="27.13" y1="-67.234" x2="10.208" y2="-82.728" width="0" layer="19" extent="1-1"/>
 <wire x1="33.83" y1="-67.234" x2="27.13" y2="-67.234" width="0" layer="19" extent="1-1"/>
+<wire x1="-103.566" y1="-172.79" x2="-20.114" y2="-67.234" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DRIVER_LEDR">
 <contactref element="LEDR2" pad="4"/>
@@ -2455,23 +2461,29 @@ design rules under a new name.</description>
 <contactref element="LEDR4" pad="3"/>
 <contactref element="LEDR6" pad="4"/>
 <contactref element="LEDR6" pad="3"/>
+<contactref element="PMIC4:L2" pad="1"/>
 <wire x1="-13.414" y1="-85.028" x2="-20.114" y2="-85.028" width="0" layer="19" extent="1-1"/>
 <wire x1="3.508" y1="-69.534" x2="-13.414" y2="-85.028" width="0" layer="19" extent="1-1"/>
 <wire x1="10.208" y1="-69.534" x2="3.508" y2="-69.534" width="0" layer="19" extent="1-1"/>
 <wire x1="27.13" y1="-85.028" x2="10.208" y2="-69.534" width="0" layer="19" extent="1-1"/>
 <wire x1="33.83" y1="-85.028" x2="27.13" y2="-85.028" width="0" layer="19" extent="1-1"/>
+<wire x1="-103.308" y1="-165.608" x2="-20.114" y2="-85.028" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VSENSE_LEDW">
 <contactref element="R5" pad="1"/>
 <contactref element="LEDW1" pad="2"/>
 <contactref element="LEDW1" pad="1"/>
+<contactref element="PMIC5:PMIC1" pad="6"/>
 <wire x1="23.924" y1="36.906" x2="27.09" y2="-93.218" width="0" layer="19" extent="1-1"/>
 <wire x1="17.224" y1="36.906" x2="23.924" y2="36.906" width="0" layer="19" extent="1-1"/>
+<wire x1="-120.838" y1="-189.554" x2="27.09" y2="-93.218" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DRIVER_LEDW">
 <contactref element="LEDW2" pad="4"/>
 <contactref element="LEDW2" pad="3"/>
+<contactref element="PMIC5:L2" pad="1"/>
 <wire x1="17.224" y1="28.51" x2="23.924" y2="28.51" width="0" layer="19" extent="1-1"/>
+<wire x1="-120.58" y1="-182.372" x2="17.224" y2="28.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
 <contactref element="LEDW1" pad="4"/>
@@ -2643,12 +2655,6 @@ design rules under a new name.</description>
 <signal name="PMIC3:PMIC_IL4001_EN_LED">
 <contactref element="PMIC3:PMIC1" pad="3"/>
 </signal>
-<signal name="PMIC3:PMIC_IL4001_VSENSE">
-<contactref element="PMIC3:PMIC1" pad="6"/>
-</signal>
-<signal name="PMIC3:PMIC_IL4001_KATHODE">
-<contactref element="PMIC3:L2" pad="1"/>
-</signal>
 <signal name="PMIC3:PMIC_IL4001_S24V">
 <contactref element="PMIC3:C8" pad="2"/>
 <contactref element="PMIC3:PMIC1" pad="1"/>
@@ -2684,12 +2690,6 @@ design rules under a new name.</description>
 <signal name="PMIC4:PMIC_IL4001_EN_LED">
 <contactref element="PMIC4:PMIC1" pad="3"/>
 </signal>
-<signal name="PMIC4:PMIC_IL4001_VSENSE">
-<contactref element="PMIC4:PMIC1" pad="6"/>
-</signal>
-<signal name="PMIC4:PMIC_IL4001_KATHODE">
-<contactref element="PMIC4:L2" pad="1"/>
-</signal>
 <signal name="PMIC5:N$29">
 <contactref element="PMIC5:L2" pad="2"/>
 <contactref element="PMIC5:U1" pad="3"/>
@@ -2706,12 +2706,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="PMIC5:PMIC_IL4001_EN_LED">
 <contactref element="PMIC5:PMIC1" pad="3"/>
-</signal>
-<signal name="PMIC5:PMIC_IL4001_VSENSE">
-<contactref element="PMIC5:PMIC1" pad="6"/>
-</signal>
-<signal name="PMIC5:PMIC_IL4001_KATHODE">
-<contactref element="PMIC5:L2" pad="1"/>
 </signal>
 </signals>
 </board>
