@@ -6496,8 +6496,8 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 <label x="7.62" y="104.14" size="1.778" layer="95"/>
 <wire x1="25.4" y1="104.14" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="104.14" x2="7.62" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="104.14" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="63.5" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="104.14" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="60.96" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
 <junction x="22.86" y="104.14"/>
 <portref moduleinst="PMIC3" port="PMIC_IL4001_S24V"/>
 <wire x1="91.44" y1="60.96" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
@@ -6523,8 +6523,8 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 <wire x1="149.86" y1="152.4" x2="172.72" y2="152.4" width="0.1524" layer="91"/>
 <junction x="172.72" y="152.4"/>
 <label x="172.72" y="134.62" size="1.778" layer="95" rot="R90"/>
-<wire x1="172.72" y1="152.4" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="63.5" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="152.4" x2="172.72" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="60.96" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
 <portref moduleinst="PMIC3" port="PMIC_IL4001_KATHODE"/>
 </segment>
 </net>
@@ -6556,10 +6556,10 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 <wire x1="172.72" y1="210.82" x2="139.7" y2="210.82" width="0.1524" layer="91"/>
 <junction x="172.72" y="210.82"/>
 <label x="149.86" y="210.82" size="1.778" layer="95"/>
-<wire x1="167.64" y1="71.12" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="68.58" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="139.7" x2="139.7" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="139.7" x2="139.7" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="71.12" x2="162.56" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="68.58" x2="162.56" y2="68.58" width="0.1524" layer="91"/>
 <portref moduleinst="PMIC3" port="PMIC_IL4001_VSENSE"/>
 </segment>
 </net>
@@ -6698,8 +6698,8 @@ This Symbol is mirrored compared to the package-&gt; mirror it in the layout if 
 <wire x1="25.4" y1="81.28" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
 <label x="7.62" y="81.28" size="1.778" layer="95"/>
 <wire x1="15.24" y1="81.28" x2="7.62" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="81.28" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="40.64" x2="91.44" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="81.28" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="38.1" x2="91.44" y2="38.1" width="0.1524" layer="91"/>
 <junction x="15.24" y="81.28"/>
 <portref moduleinst="PMIC3" port="PMIC_IL4001_GND"/>
 <wire x1="91.44" y1="38.1" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
